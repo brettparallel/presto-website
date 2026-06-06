@@ -206,7 +206,7 @@ button { font-family: inherit; }
   letter-spacing: -.01em;
   margin: 26px auto 0;
   max-width: 960px;
-  color: var(--lime-500);
+  color: #fff;
 }
 .hero-sub {
   font-size: clamp(17px, 2vw, 21px);
