@@ -25,3 +25,4 @@ pnpm-debug.log*
 
 # TinaCMS generated
 tina/__generated__/
+.wrangler/
