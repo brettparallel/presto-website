@@ -1,0 +1,101 @@
+---
+/* JSON-LD structured data for the homepage */
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://heypresto.design/#organization",
+      "name": "Presto",
+      "url": "https://heypresto.design",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://heypresto.design/assets/logo-pos.svg"
+      },
+      "description": "Monthly creative partner for businesses. Brand-led design, WordPress development, and strategic direction — async, on a subscription.",
+      "areaServed": ["AU", "US", "GB"],
+      "serviceType": ["Graphic Design", "Web Development", "Brand Strategy"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://heypresto.design/#website",
+      "url": "https://heypresto.design",
+      "name": "Presto",
+      "publisher": { "@id": "https://heypresto.design/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://heypresto.design/#webpage",
+      "url": "https://heypresto.design",
+      "name": "Presto — Your monthly creative partner",
+      "description": "Brand-led design, WordPress development, and strategic direction — async, on a subscription, with zero hand-holding required.",
+      "isPartOf": { "@id": "https://heypresto.design/#website" },
+      "about": { "@id": "https://heypresto.design/#organization" }
+    },
+    {
+      "@type": "Service",
+      "name": "Presto Design Subscription",
+      "provider": { "@id": "https://heypresto.design/#organization" },
+      "serviceType": "Creative Design Subscription",
+      "description": "Monthly subscription for brand design, web development, and creative direction.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Essentials",
+          "price": "2450",
+          "priceCurrency": "USD",
+          "billingIncrement": "P1M",
+          "description": "One active request at a time. Brand-led design work and light WordPress updates."
+        },
+        {
+          "@type": "Offer",
+          "name": "Partner",
+          "price": "3950",
+          "priceCurrency": "USD",
+          "billingIncrement": "P1M",
+          "description": "Two active requests. Full design and WordPress development with monthly strategy check-in."
+        },
+        {
+          "@type": "Offer",
+          "name": "Studio",
+          "price": "6500",
+          "priceCurrency": "USD",
+          "billingIncrement": "P1M",
+          "description": "Multiple active requests with dedicated creative direction and fastest priority turnaround."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is this different from hiring a freelancer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A freelancer is usually project-specific, hard to retain, and rarely strategic. Presto is a structured, ongoing relationship with a consistent partner who understands your brand — not just your latest brief."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you mean by async-first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No constant meetings or real-time calls. Everything runs through your shared board. You submit work, leave feedback, and review updates on your own schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a contract?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No lock-in contracts. Presto runs month-to-month. You can pause or cancel with 30 days' notice."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>

@@ -1,0 +1,11 @@
+---
+interface Props { text: string; }
+const { text } = Astro.props;
+---
+
+<div class="trust-bar" id="trust">
+  <div class="wrap">
+    <img src="/assets/burst-navy.png" alt="" aria-hidden="true" width="26" height="26">
+    {text}
+  </div>
+</div>

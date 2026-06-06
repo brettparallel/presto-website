@@ -1,0 +1,56 @@
+---
+interface Item {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  eyebrow: string;
+  heading: string;
+  items: Item[];
+}
+
+const { eyebrow, heading, items } = Astro.props;
+---
+
+<section class="faq" id="faq" aria-labelledby="faq-heading">
+  <div class="wrap">
+    <div class="faq-aside reveal">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>{eyebrow}</span>
+      <h2 class="t-h2" id="faq-heading">{heading}</h2>
+      <img class="faq-cluster" src="/assets/burst-cluster-purple.png" alt="" aria-hidden="true" width="120" height="120">
+    </div>
+    <div class="faq-items" id="faq-items">
+      {items.map((item, i) => (
+        <div class={`faq-item reveal`} style={`transition-delay:${(i + 1) * 0.08}s`} data-open="false">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-q">{item.question}</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </span>
+          </button>
+          <p class="faq-answer">{item.answer}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  const items = document.querySelectorAll('.faq-item');
+  items.forEach(item => {
+    item.querySelector('.faq-trigger')?.addEventListener('click', () => {
+      const isOpen = item.getAttribute('data-open') === 'true';
+      items.forEach(i => {
+        i.setAttribute('data-open', 'false');
+        i.querySelector('.faq-trigger')?.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.setAttribute('data-open', 'true');
+        item.querySelector('.faq-trigger')?.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>

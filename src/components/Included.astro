@@ -1,0 +1,52 @@
+---
+interface Card {
+  title: string;
+  variant: 'accent' | 'navy' | 'lime';
+  items: string[];
+}
+
+interface Props {
+  eyebrow: string;
+  heading: string;
+  cards: Card[];
+  note: string;
+}
+
+const { eyebrow, heading, cards, note } = Astro.props;
+
+const burstSrc = (variant: string) =>
+  variant === 'lime' ? '/assets/burst-navy.png' : '/assets/burst-white.png';
+
+const checkColor = (variant: string) =>
+  variant === 'lime' ? 'var(--navy-800)' : 'currentColor';
+---
+
+<section class="included" id="whats-included" aria-labelledby="included-heading">
+  <div class="wrap">
+    <div class="included-header">
+      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>{eyebrow}</span>
+      <h2 class="t-h2 reveal reveal-delay-1" id="included-heading" style="margin-top:18px;">{heading}</h2>
+    </div>
+    <div class="included-grid">
+      {cards.map((card, i) => (
+        <div class={`included-card included-card--${card.variant} reveal`}
+          style={`transition-delay:${(i + 2) * 0.1}s`}>
+          <img class="included-card-burst" src={burstSrc(card.variant)} alt="" aria-hidden="true">
+          <h3 class="included-card-title">{card.title}</h3>
+          <ul class="included-items" role="list">
+            {card.items.map(item => (
+              <li class="included-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={checkColor(card.variant)}
+                  stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 6 9 17l-5-5"/>
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <p class="included-note">{note}</p>
+  </div>
+</section>

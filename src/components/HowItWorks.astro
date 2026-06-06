@@ -1,0 +1,33 @@
+---
+interface Step {
+  num: string;
+  title: string;
+  description: string;
+  featured?: boolean;
+}
+
+interface Props {
+  eyebrow: string;
+  heading: string;
+  steps: Step[];
+}
+
+const { eyebrow, heading, steps } = Astro.props;
+---
+
+<section class="steps" id="how-it-works" aria-labelledby="steps-heading">
+  <div class="wrap">
+    <span class="eyebrow eyebrow--dark reveal"><span class="dot" aria-hidden="true"></span>{eyebrow}</span>
+    <h2 class="t-h2 reveal reveal-delay-1" id="steps-heading" style="color:#fff;margin-top:18px;max-width:640px;">{heading}</h2>
+    <div class="steps-grid">
+      {steps.map((step, i) => (
+        <div class={`step-card ${step.featured ? 'step-card--featured' : 'step-card--default'} reveal`}
+          style={`transition-delay:${(i + 2) * 0.1}s`}>
+          <div class="step-num">{step.num}</div>
+          <h3 class="step-title">{step.title}</h3>
+          <p class="step-desc">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

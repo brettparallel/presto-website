@@ -1,0 +1,51 @@
+---
+interface Props {
+  eyebrow: string;
+  heading: string;
+  body: string;
+  pains: string[];
+  fixLabel: string;
+  fixHeadline: string;
+}
+
+const { eyebrow, heading, body, pains, fixLabel, fixHeadline } = Astro.props;
+---
+
+<section class="problem" id="problem" aria-labelledby="problem-heading">
+  <div class="wrap">
+    <div class="problem-grid">
+
+      <div class="reveal">
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span>{eyebrow}</span>
+        <h2 class="t-h2" id="problem-heading" style="margin-top:18px;">{heading}</h2>
+        <p class="t-lead" style="margin-top:18px;">{body}</p>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <p class="problem-pains-label">Sound familiar?</p>
+        <ul class="problem-pains" role="list">
+          {pains.map(pain => (
+            <li class="pain-item">
+              <span class="pain-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+                  <path d="M18 6 6 18M6 6l12 12"/>
+                </svg>
+              </span>
+              <span class="pain-text">{pain}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="problem-fix reveal">
+      <img src="/assets/burst-cluster-purple.png" alt="" aria-hidden="true" class="burst"
+        style="right:36px;bottom:-18px;width:120px;height:120px;opacity:.85;">
+      <img src="/assets/burst-white.png" alt="" aria-hidden="true" class="burst"
+        style="right:150px;top:26px;width:56px;height:56px;opacity:.8;">
+      <span class="problem-fix-label">{fixLabel}</span>
+      <p class="problem-fix-headline">{fixHeadline}</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+---
+interface FooterLink { label: string; href: string; }
+interface FooterColumn { heading: string; links: FooterLink[]; }
+
+interface Props {
+  tagline: string;
+  copyright: string;
+  columns: FooterColumn[];
+}
+
+const { tagline, copyright, columns } = Astro.props;
+---
+
+<footer class="site-footer" aria-label="Site footer">
+  <img class="footer-burst" src="/assets/burst-cluster-purple.png" alt="" aria-hidden="true">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="/assets/logo-neg.svg" alt="presto" height="30" width="auto">
+        </div>
+        <p class="footer-tagline">{tagline}</p>
+      </div>
+      {columns.map(col => (
+        <div>
+          <p class="footer-col-heading">{col.heading}</p>
+          <nav class="footer-links" aria-label={col.heading}>
+            {col.links.map(link => <a href={link.href}>{link.label}</a>)}
+          </nav>
+        </div>
+      ))}
+    </div>
+    <div class="footer-bottom">
+      <span>{copyright}</span>
+      <span>Month-to-month. Cancel anytime.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href="https://calendly.com/hello-heypresto/30min"]').forEach(el => {
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener noreferrer');
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      (window as any).Calendly?.initPopupWidget({
+        url: 'https://calendly.com/hello-heypresto/30min?text_color=0e0f52&primary_color=b301ff'
+      });
+    });
+  });
+</script>

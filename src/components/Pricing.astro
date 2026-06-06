@@ -1,0 +1,70 @@
+---
+interface Tier {
+  name: string;
+  tagline: string;
+  price: string;
+  featured?: boolean;
+  badge?: string;
+  items: string[];
+  bestFor: string;
+  ctaLabel: string;
+  ctaHref: string;
+}
+
+interface Props {
+  eyebrow: string;
+  heading: string;
+  subline: string;
+  note: string;
+  tiers: Tier[];
+}
+
+const { eyebrow, heading, subline, note, tiers } = Astro.props;
+---
+
+<section class="pricing" id="pricing" aria-labelledby="pricing-heading">
+  <div class="wrap">
+    <div class="pricing-header">
+      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>{eyebrow}</span>
+      <h2 class="t-h2 reveal reveal-delay-1" id="pricing-heading" style="margin-top:18px;">{heading}</h2>
+      <p class="t-lead reveal reveal-delay-2" style="margin-top:14px;">{subline}</p>
+    </div>
+    <div class="pricing-grid">
+      {tiers.map((tier, i) => (
+        <div class={`pricing-card ${tier.featured ? 'pricing-card--featured' : 'pricing-card--default'} reveal`}
+          style={`transition-delay:${(i + 3) * 0.1}s`}
+          aria-label={tier.featured ? 'Most popular plan' : undefined}>
+          {tier.badge && <span class="pricing-badge">{tier.badge}</span>}
+          <h3 class="pricing-name">{tier.name}</h3>
+          <p class="pricing-tagline">{tier.tagline}</p>
+          <div class="pricing-price">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">{tier.price}</span>
+            <span class="pricing-period">/month</span>
+          </div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-items" role="list">
+            {tier.items.map(item => (
+              <li class="pricing-item">
+                <img src="/assets/burst-purple.png" alt="" aria-hidden="true">
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p class="pricing-best">{tier.bestFor}</p>
+          <div class="pricing-cta">
+            <a href={tier.ctaHref} class={`btn ${tier.featured ? 'btn--lime' : 'btn--ghost'} btn--md`}>
+              {tier.ctaLabel}
+              <span class="btn-arrow" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M13 6l6 6-6 6"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+    <p class="pricing-note">{note}</p>
+  </div>
+</section>

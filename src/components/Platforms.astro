@@ -1,0 +1,23 @@
+---
+interface Props {
+  label: string;
+  tools: string[];
+}
+
+const { label, tools } = Astro.props;
+const doubled = [...tools, ...tools];
+---
+
+<section class="platforms" id="platforms" aria-label="Platforms and tools">
+  <p class="platforms-label">{label}</p>
+  <div class="platforms-marquee" aria-hidden="true">
+    <div class="platforms-track">
+      {doubled.map(name => (
+        <>
+          <span class="platform-name">{name}</span>
+          <img src="/assets/burst-white.png" alt="" aria-hidden="true" class="platform-burst">
+        </>
+      ))}
+    </div>
+  </div>
+</section>

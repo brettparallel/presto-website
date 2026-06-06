@@ -1,0 +1,34 @@
+---
+interface Props {
+  headline: string;
+  subline: string;
+  primaryCta: { label: string; href: string };
+  secondaryCta: { label: string; href: string };
+  footnote: string;
+}
+
+const { headline, subline, primaryCta, secondaryCta, footnote } = Astro.props;
+---
+
+<section class="final-cta" id="final-cta" aria-labelledby="cta-heading">
+  <img src="/assets/burst-cluster-white.png" alt="" aria-hidden="true"
+    style="position:absolute;left:-20px;bottom:-30px;width:180px;height:180px;opacity:.5;pointer-events:none;object-fit:contain;">
+  <img src="/assets/burst-navy.png" alt="" aria-hidden="true"
+    style="position:absolute;right:10%;top:50px;width:80px;height:80px;opacity:.9;pointer-events:none;object-fit:contain;">
+  <div class="wrap">
+    <h2 class="final-cta-headline reveal" id="cta-heading">{headline}</h2>
+    <p class="final-cta-sub reveal reveal-delay-1">{subline}</p>
+    <div class="final-cta-actions reveal reveal-delay-2">
+      <a href={primaryCta.href} class="btn btn--lime btn--lg">
+        {primaryCta.label}
+        <span class="btn-arrow" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </span>
+      </a>
+      <a href={secondaryCta.href} class="btn btn--white btn--lg" onclick="Calendly.initPopupWidget({url:'https://calendly.com/hello-heypresto/30min?text_color=0e0f52&primary_color=b301ff'});return false;">{secondaryCta.label}</a>
+    </div>
+    <p class="final-cta-footnote reveal reveal-delay-3">{footnote}</p>
+  </div>
+</section>

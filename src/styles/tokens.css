@@ -1,0 +1,140 @@
+/* =====================================================================
+   PRESTO — Design Tokens
+   Source of truth: colors_and_type.css from handoff bundle.
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: 'After';
+  src: url('/fonts/After-Regular.woff2') format('woff2'),
+       url('/fonts/After-Regular.woff') format('woff'),
+       url('/fonts/After-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Brand core */
+  --navy:    #0E0F52;
+  --purple:  #B301FF;
+  --lime:    #C8E836;
+  --white:   #FFFFFF;
+  --black:   #111111;
+  --teal:    #3FD0B0;
+
+  /* Navy / indigo scale */
+  --navy-900: #08082E;
+  --navy-800: #0E0F52;
+  --navy-700: #1B1C72;
+  --navy-600: #2E3192;
+  --navy-500: #4A4EAE;
+  --navy-400: #6E72C0;
+  --navy-300: #9A9DD4;
+  --navy-200: #C6C8E6;
+  --navy-100: #E4E5F4;
+  --navy-50:  #F3F3FB;
+
+  /* Purple scale */
+  --purple-700: #7A00B0;
+  --purple-600: #9500D6;
+  --purple-500: #B301FF;
+  --purple-400: #C64DFF;
+  --purple-200: #E6B3FF;
+  --purple-100: #F3DCFF;
+  --purple-50:  #FBF0FF;
+
+  /* Lime scale */
+  --lime-700: #8FA80F;
+  --lime-600: #B0CE1F;
+  --lime-500: #C8E836;
+  --lime-200: #E6F49A;
+  --lime-100: #F1F9C6;
+  --lime-50:  #F8FCE2;
+
+  /* Warm support */
+  --cream:         #F5F2E9;
+  --lilac-surface: #F3E9FF;
+
+  /* Semantic surfaces & text */
+  --bg:           var(--white);
+  --bg-subtle:    var(--navy-50);
+  --bg-inset:     var(--navy-100);
+  --bg-navy:      var(--navy-800);
+  --surface:      var(--white);
+  --surface-2:    var(--navy-50);
+
+  --fg-1:          var(--navy-800);
+  --fg-2:          var(--navy-500);
+  --fg-3:          var(--navy-400);
+  --fg-on-dark:    #FFFFFF;
+  --fg-on-dark-2:  rgba(255,255,255,0.68);
+
+  --border:        var(--navy-100);
+  --border-strong: var(--navy-200);
+  --ring:          var(--purple-500);
+
+  /* Type families */
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'After', Georgia, 'Times New Roman', serif;
+  --font-serif:   'After', Georgia, 'Times New Roman', serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Type scale */
+  --text-xs:12px; --text-sm:14px; --text-base:16px; --text-md:18px;
+  --text-lg:20px; --text-xl:24px; --text-2xl:30px; --text-3xl:38px;
+  --text-4xl:48px; --text-5xl:64px; --text-6xl:84px; --text-7xl:108px;
+
+  --leading-tight:1.04; --leading-snug:1.16; --leading-normal:1.5; --leading-relaxed:1.65;
+  --tracking-tight:-0.03em; --tracking-snug:-0.015em; --tracking-normal:0; --tracking-wide:0.08em;
+
+  --weight-regular:400; --weight-medium:500; --weight-semibold:600;
+  --weight-bold:700; --weight-extra:800; --weight-black:900;
+
+  /* Radii */
+  --radius-xs:6px; --radius-sm:10px; --radius-md:14px; --radius-lg:20px;
+  --radius-xl:28px; --radius-2xl:36px; --radius-pill:999px;
+
+  /* Spacing (4pt) */
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:20px;
+  --space-6:24px; --space-8:32px; --space-10:40px; --space-12:48px;
+  --space-16:64px; --space-20:80px; --space-24:96px; --space-32:128px;
+
+  /* Shadows (cool, indigo-tinted) */
+  --shadow-xs:  0 1px 2px rgba(8,8,46,0.06);
+  --shadow-sm:  0 2px 6px rgba(8,8,46,0.08);
+  --shadow-md:  0 8px 22px rgba(8,8,46,0.12);
+  --shadow-lg:  0 18px 44px rgba(8,8,46,0.16);
+  --shadow-pop: 0 12px 30px rgba(179,1,255,0.30);
+}
+
+/* Semantic type classes */
+.t-hero, .t-display {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: var(--text-7xl); line-height: 0.98;
+  letter-spacing: -0.01em; color: var(--fg-1);
+}
+.t-h1 { font-family: var(--font-display); font-weight: 400;
+  font-size: var(--text-5xl); line-height: 1.0;
+  letter-spacing: -0.01em; color: var(--fg-1); }
+.t-h2 { font-family: var(--font-display); font-weight: 400;
+  font-size: var(--text-4xl); line-height: 1.06;
+  letter-spacing: -0.01em; color: var(--fg-1); }
+.t-h3 { font-family: var(--font-display); font-weight: 400;
+  font-size: var(--text-3xl); line-height: 1.1;
+  letter-spacing: -0.005em; color: var(--fg-1); }
+.t-h4 { font-family: var(--font-sans); font-weight: var(--weight-bold);
+  font-size: var(--text-2xl); line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-snug); color: var(--fg-1); }
+.t-lead { font-family: var(--font-sans); font-weight: 400;
+  font-size: var(--text-lg); line-height: var(--leading-relaxed); color: var(--fg-2); }
+.t-body { font-family: var(--font-sans); font-weight: 400;
+  font-size: var(--text-base); line-height: var(--leading-normal); color: var(--fg-1); }
+.t-small { font-family: var(--font-sans); font-size: var(--text-sm);
+  line-height: var(--leading-normal); color: var(--fg-2); }
+.t-eyebrow { font-family: var(--font-sans); font-weight: var(--weight-bold);
+  font-size: var(--text-xs); line-height: 1; letter-spacing: var(--tracking-wide);
+  text-transform: uppercase; color: var(--purple-500); }
+.t-mono { font-family: var(--font-mono); font-size: var(--text-sm);
+  letter-spacing: -0.01em; color: var(--fg-1); }

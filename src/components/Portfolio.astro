@@ -1,0 +1,44 @@
+---
+interface Props {
+  eyebrow: string;
+  heading: string;
+  subline: string;
+  rowA: string[];
+  rowB: string[];
+}
+
+const { eyebrow, heading, subline, rowA, rowB } = Astro.props;
+
+const doubledA = [...rowA, ...rowA];
+const doubledB = [...rowB, ...rowB];
+---
+
+<section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+  <div class="portfolio-header">
+    <div style="max-width:680px;">
+      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>{eyebrow}</span>
+      <h2 class="t-h2 reveal reveal-delay-1" id="portfolio-heading" style="margin-top:18px;">{heading}</h2>
+    </div>
+    <p class="portfolio-sub reveal reveal-delay-2">{subline}</p>
+  </div>
+  <div class="portfolio-marquee-wrap" aria-hidden="true">
+    <div class="marquee-row">
+      <div class="marquee-track marquee-track--fwd">
+        {doubledA.map(slug => (
+          <div class="portfolio-card">
+            <img src={`/assets/portfolio/${slug}.jpg`} alt="" loading="lazy">
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="marquee-row">
+      <div class="marquee-track marquee-track--rev">
+        {doubledB.map(slug => (
+          <div class="portfolio-card">
+            <img src={`/assets/portfolio/${slug}.jpg`} alt="" loading="lazy">
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

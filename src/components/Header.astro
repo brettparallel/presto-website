@@ -1,0 +1,58 @@
+---
+interface NavLink { label: string; href: string; }
+
+interface Props {
+  navLinks: NavLink[];
+  ctaLabel: string;
+  ctaHref: string;
+}
+
+const { navLinks, ctaLabel, ctaHref } = Astro.props;
+---
+
+<header class="site-header" id="site-header">
+  <div class="wrap">
+    <a href="/" class="header-logo" aria-label="Presto home">
+      <img src="/assets/logo-neg.svg" alt="presto" height="26" width="auto">
+    </a>
+    <nav class="header-nav" aria-label="Primary">
+      {navLinks.map(link => <a href={link.href}>{link.label}</a>)}
+    </nav>
+    <div class="header-cta">
+      <a href={ctaHref} class="btn btn--lime btn--sm">
+        {ctaLabel}
+        <span class="btn-arrow" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M3 12h18M3 6h18M3 18h18"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    {navLinks.map(link => <a href={link.href}>{link.label}</a>)}
+    <a href={ctaHref} style="color:var(--lime-500);font-weight:700;">{ctaLabel}</a>
+  </nav>
+</header>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const nav = document.getElementById('mobile-nav');
+  if (btn && nav) {
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+</script>

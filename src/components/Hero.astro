@@ -1,0 +1,42 @@
+---
+interface Props {
+  badge: string;
+  headline: string;
+  subline: string;
+  primaryCta: { label: string; href: string };
+  secondaryCta: { label: string; href: string };
+  footnote: string;
+}
+
+const { badge, headline, subline, primaryCta, secondaryCta, footnote } = Astro.props;
+---
+
+<section class="hero" id="hero" aria-labelledby="hero-headline">
+  <img class="hero-burst" src="/assets/burst-cluster-purple.png" alt="" aria-hidden="true"
+    style="left:6%;top:70px;width:170px;height:170px;opacity:.85;">
+  <img class="hero-burst" src="/assets/burst-white.png" alt="" aria-hidden="true"
+    style="right:12%;top:48px;width:70px;height:70px;opacity:.9;">
+  <img class="hero-burst" src="/assets/burst-cluster-purple.png" alt="" aria-hidden="true"
+    style="right:4%;bottom:80px;width:120px;height:120px;opacity:.8;">
+
+  <div class="wrap">
+    <div class="hero-badge reveal">
+      <span class="dot" aria-hidden="true"></span>
+      {badge}
+    </div>
+    <h1 class="hero-headline reveal reveal-delay-1" id="hero-headline">{headline}</h1>
+    <p class="hero-sub reveal reveal-delay-2">{subline}</p>
+    <div class="hero-actions reveal reveal-delay-3">
+      <a href={primaryCta.href} class="btn btn--lime btn--lg">
+        {primaryCta.label}
+        <span class="btn-arrow" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </span>
+      </a>
+      <a href={secondaryCta.href} class="btn btn--ghost-light btn--lg">{secondaryCta.label}</a>
+    </div>
+    <p class="hero-footnote reveal reveal-delay-3">{footnote}</p>
+  </div>
+</section>
