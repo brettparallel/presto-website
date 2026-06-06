@@ -24,7 +24,10 @@ const { badge, headline, subline, primaryCta, secondaryCta, footnote } = Astro.p
       <span class="dot" aria-hidden="true"></span>
       {badge}
     </div>
-    <h1 class="hero-headline reveal reveal-delay-1" id="hero-headline">{headline}</h1>
+    <h1 class="hero-headline reveal reveal-delay-1" id="hero-headline">
+      Your brand's creative team.<br>
+      <span style="color:var(--lime,#ceff1a)">Monthly.</span> <span style="color:#fff">No overhead.</span>
+    </h1>
     <p class="hero-sub reveal reveal-delay-2">{subline}</p>
     <div class="hero-actions reveal reveal-delay-3">
       <a href={primaryCta.href} class="btn btn--lime btn--lg">
