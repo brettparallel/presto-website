@@ -218,20 +218,20 @@
         ]
       },
       {
-        "heading": "Company",
+        "heading": "Socials",
         "links": [
-          { "label": "About", "href": "#" },
-          { "label": "Work", "href": "#" },
-          { "label": "Contact", "href": "#" },
-          { "label": "Book a call", "href": "https://calendly.com/hello-heypresto/30min" }
+          { "label": "Facebook", "href": "https://www.facebook.com/heyprestodesign/" },
+          { "label": "X", "href": "https://x.com/heyprestodesgn" },
+          { "label": "LinkedIn", "href": "https://www.linkedin.com/company/heyprestodesign/" },
+          { "label": "Instagram", "href": "https://www.instagram.com/heyprestodesgn" }
         ]
       },
       {
         "heading": "Legal",
         "links": [
-          { "label": "Terms", "href": "#" },
-          { "label": "Privacy", "href": "#" },
-          { "label": "Cancellation", "href": "#" }
+          { "label": "Terms & Conditions", "href": "/terms" },
+          { "label": "Privacy Policy", "href": "/privacy" },
+          { "label": "Pause / Cancel", "href": "mailto:hello@heypresto.design?subject=I'd%20like%20to%20pause%2Fcancel%2C%20effective%20at%20my%20next%20billing%20after%2030%20days" }
         ]
       }
     ]

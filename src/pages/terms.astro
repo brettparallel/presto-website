@@ -1,0 +1,376 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const navLinks = [
+  { label: 'How it works', href: '/#how-it-works' },
+  { label: "What's included", href: '/#whats-included' },
+  { label: 'Pricing', href: '/#pricing' },
+  { label: 'FAQ', href: '/#faq' },
+];
+
+const footerColumns = [
+  {
+    heading: 'Product',
+    links: [
+      { label: 'How it works', href: '/#how-it-works' },
+      { label: "What's included", href: '/#whats-included' },
+      { label: 'Pricing', href: '/#pricing' },
+      { label: 'FAQ', href: '/#faq' },
+    ],
+  },
+  {
+    heading: 'Socials',
+    links: [
+      { label: 'Facebook', href: 'https://www.facebook.com/heyprestodesign/' },
+      { label: 'X', href: 'https://x.com/heyprestodesgn' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/company/heyprestodesign/' },
+      { label: 'Instagram', href: 'https://www.instagram.com/heyprestodesgn' },
+    ],
+  },
+  {
+    heading: 'Legal',
+    links: [
+      { label: 'Terms & Conditions', href: '/terms' },
+      { label: 'Privacy Policy', href: '/privacy' },
+      { label: 'Pause / Cancel', href: "mailto:hello@heypresto.design?subject=I'd%20like%20to%20pause%2Fcancel%2C%20effective%20at%20my%20next%20billing%20after%2030%20days" },
+    ],
+  },
+];
+---
+
+<Base
+  title="Terms & Conditions — Presto"
+  description="Terms & Conditions governing use of Presto's design and development subscription service."
+>
+  <Header navLinks={navLinks} ctaLabel="Get started" ctaHref="/#pricing" />
+
+  <main class="legal-page">
+    <div class="legal-wrap">
+      <header class="legal-header">
+        <h1>Terms &amp; Conditions</h1>
+        <p class="legal-meta">Last updated: June 2026</p>
+      </header>
+
+      <div class="legal-body">
+        <p>This Terms of Service Agreement (the "Agreement") constitutes a legally binding agreement between Presto ("Presto", "we", "us", or "our"), a design and development subscription service operated in Australia, and the client, whether personally or on behalf of an entity ("Client"), with regard to access to and use of Presto's website: <a href="/">https://heypresto.design</a> (the "Website") and the subscription services offered therein (the "Services"). By subscribing to or using the Services, Client agrees to be bound by this Agreement in full.</p>
+
+        <h2>1. Intellectual Property Rights</h2>
+        <p>Unless otherwise indicated, the Website and all content therein — including source code, software, designs, text, graphics, and branding — is the property of Presto and is protected by applicable intellectual property laws of Australia and relevant international conventions. No content from the Website may be copied, reproduced, aggregated, republished, transmitted, sold, or otherwise exploited for any commercial purpose without Presto's prior written permission. Presto reserves all rights in the Website and its content.</p>
+
+        <h2>2. Ownership of Work Product</h2>
+        <p>All design work, original source files, and deliverables created specifically for Client ("Work Product") become the sole property of Client upon receipt of full payment for the applicable subscription period. Presto irrevocably and perpetually assigns to Client all rights, title, and interest in and to the Work Product upon receipt of such payment.</p>
+        <p>Client warrants that any materials provided to Presto for use in the Services — including logos, images, copy, brand assets, or third-party content — are owned by Client or properly licensed, and do not infringe any third-party intellectual property rights or rights of publicity.</p>
+        <p>Presto retains the right to display Work Product in its portfolio and marketing materials unless a Non-Disclosure Agreement (NDA) is in place between the parties, as described in Section 23.</p>
+
+        <h2>3. Third-Party Fonts and Licensed Assets</h2>
+        <p>Where a project incorporates fonts, stock photography, icons, or other assets not owned by Presto that require a commercial licence for Client's reproduction, distribution, or public display of the Work Product ("Third-Party Assets"), Presto will notify Client in writing. Client is solely responsible for purchasing any required licences directly from the rights-holder.</p>
+        <p>Any licences held by Presto for use of Third-Party Assets in production are not transferable to Client unless explicitly confirmed in writing. Client assumes full responsibility for any consequences arising from failure to obtain the required licences.</p>
+
+        <h2>4. Service Plans — Scope and Inclusions</h2>
+        <p>Presto offers three monthly subscription tiers. The scope of services available under each plan is as follows:</p>
+
+        <h3>Essentials</h3>
+        <p>One active design request at a time. The Essentials plan includes:</p>
+        <ul>
+          <li>Brand asset production (logos applied to formats, social templates, stationery, collateral)</li>
+          <li>Marketing and campaign graphics</li>
+          <li>Presentation design and pitch decks</li>
+          <li>Social media graphics and digital assets</li>
+          <li>Light web updates on existing WordPress sites (see Section 5 for definition)</li>
+        </ul>
+
+        <h3>Partner <em>(Most Popular)</em></h3>
+        <p>Two active requests at a time. All Essentials inclusions, plus:</p>
+        <ul>
+          <li>WordPress page design and build using existing themes or page builders (e.g. Elementor, Divi, Bricks)</li>
+          <li>New landing pages and sections within an existing WordPress site</li>
+          <li>WordPress theme customisation within the capabilities of the installed theme/builder</li>
+          <li>Monthly strategy check-in</li>
+        </ul>
+
+        <h3>Studio</h3>
+        <p>Multiple active requests with priority turnaround and closer creative direction. All Partner inclusions, plus:</p>
+        <ul>
+          <li>Higher monthly output across brand, web, and campaign work</li>
+          <li>Priority positioning in Presto's production schedule</li>
+          <li>Dedicated creative direction and a more intensive working relationship</li>
+        </ul>
+        <p>See Section 6 for further detail on request volume and what "multiple active requests" means in practice under the Studio plan.</p>
+
+        <h2>5. Service Inclusions and Exclusions</h2>
+        <p><strong>Included across all plans:</strong></p>
+        <ul>
+          <li>Brand-led design and visual asset production</li>
+          <li>Async workflow via shared project board</li>
+          <li>Ongoing creative direction and brand guidance</li>
+        </ul>
+        <p><strong>Included from the Essentials plan:</strong></p>
+        <ul>
+          <li>Light WordPress web updates (defined below)</li>
+        </ul>
+        <p><strong>Included from the Partner plan:</strong></p>
+        <ul>
+          <li>Full WordPress design and development (new pages, landing pages, section builds)</li>
+        </ul>
+
+        <h3>"Light WordPress work" — defined</h3>
+        <p>For the purposes of this Agreement, "light WordPress work" refers to minor updates and modifications to an existing, live WordPress website. This includes:</p>
+        <ul>
+          <li>Text and content updates on existing pages</li>
+          <li>Image and media replacements</li>
+          <li>Button, link, and CTA updates</li>
+          <li>Minor layout adjustments within existing page builder blocks or theme options</li>
+          <li>Basic plugin settings adjustments (not plugin development)</li>
+          <li>Adding a new block or row using tools already installed on the site</li>
+        </ul>
+        <p>Light WordPress work does not include:</p>
+        <ul>
+          <li>Building new pages from scratch (available from the Partner plan)</li>
+          <li>Custom PHP, JavaScript, or plugin development of any kind</li>
+          <li>WooCommerce or e-commerce setup, configuration, or development</li>
+          <li>Theme development from scratch</li>
+          <li>Server or hosting configuration, maintenance, or migration</li>
+          <li>Third-party API integrations</li>
+          <li>Database management or migration</li>
+          <li>Any work requiring server-side access beyond standard WordPress admin</li>
+        </ul>
+        <p>Clients on the Essentials plan who require development work beyond light updates are encouraged to discuss upgrading to the Partner or Studio plan.</p>
+
+        <p><strong>Excluded from all plans:</strong></p>
+        <p>The following services fall outside the scope of all Presto subscription plans:</p>
+        <ul>
+          <li>SEO strategy, technical SEO audits, or link-building campaigns</li>
+          <li>Paid advertising creation or management (Google Ads, Meta Ads, etc.)</li>
+          <li>Copywriting or editorial content production</li>
+          <li>Email marketing template build or campaign management</li>
+          <li>Social media account management or scheduling</li>
+          <li>Photography or video production</li>
+          <li>Full brand strategy or naming from scratch (available for discussion on request and quoted separately)</li>
+          <li>Platforms other than WordPress (handled on a case-by-case basis at Presto's discretion)</li>
+        </ul>
+        <p>Work falling outside the above inclusions may be considered separately and quoted on request.</p>
+
+        <h2>6. Fair Use — Active Requests and Throughput</h2>
+        <p><strong>Essentials:</strong> One design request may be active at any time. Once a delivered request is approved or marked complete, the next request in the queue is activated.</p>
+        <p><strong>Partner:</strong> Two requests may be active simultaneously and are worked through on a rolling basis.</p>
+        <h3>Studio — "Multiple requests" in practice:</h3>
+        <p>The Studio plan is designed for clients with high-volume, ongoing creative needs. In practice, this means:</p>
+        <ul>
+          <li>Approximately 3–5 requests may be active or in progress at any one time, depending on the complexity and nature of each request</li>
+          <li>Higher monthly throughput compared to the Partner plan — the queue is deeper and moved through more rapidly</li>
+          <li>Priority positioning across Presto's production schedule</li>
+          <li>More frequent check-ins and a closer working relationship</li>
+        </ul>
+        <p>The Studio plan does not represent unlimited simultaneous capacity. Presto is a dedicated creative partner — not an agency with multiple production teams. Studio clients receive the highest level of access to Presto's creative resource within realistic and transparent bounds. Presto will always communicate capacity and expected timelines clearly.</p>
+
+        <h2>7. Turnaround Times</h2>
+        <p>Most design requests are completed within 2–3 business days of activation. WordPress development requests — including new pages, landing page builds, and theme customisation — typically take 3–7 business days depending on scope and complexity.</p>
+        <p>Turnaround times are estimates and not guarantees. Presto will provide an indicative timeline at the point of request activation and will proactively communicate any changes. Complex or scope-heavy requests may take longer; these will be flagged as early as possible.</p>
+        <p>Presto does not operate on weekends or Australian public holidays. These days are not counted within business day estimates.</p>
+
+        <h2>8. Subscription, Pause, and Cancellation</h2>
+        <p>Presto subscriptions operate on a monthly, rolling basis with no lock-in contract.</p>
+        <p><strong>Billing:</strong> Subscriptions are billed monthly in advance. By subscribing, Client authorises Presto to charge the applicable monthly fee via the selected payment method at the start of each billing cycle.</p>
+        <p><strong>Pausing:</strong> Clients may pause their subscription. A pause request must be submitted in writing to <a href="mailto:hello@heypresto.design">hello@heypresto.design</a> and will take effect at the end of the current billing period. The subscription will resume at the start of the following period unless cancelled.</p>
+        <p><strong>Cancellation:</strong> To cancel, Client must provide written notice to <a href="mailto:hello@heypresto.design">hello@heypresto.design</a> at least 30 days before the next billing date. Access to the project board and in-progress requests will continue through the final paid period. No partial refunds are provided for unused time within a billing cycle.</p>
+
+        <h2>9. User Representations</h2>
+        <p>By using the Website or Services, Client represents and warrants that:</p>
+        <ul>
+          <li>Client has full legal capacity to enter into this Agreement</li>
+          <li>Client is not a minor in the jurisdiction of their domicile</li>
+          <li>Client will not use the Website or Services for any unlawful or unauthorised purpose</li>
+          <li>Client's use of the Services will not violate any applicable law or regulation</li>
+          <li>Client will not access the Website through automated or non-human means, or attempt to circumvent any security measure</li>
+        </ul>
+
+        <h2>10. Prohibited Activities</h2>
+        <p>Client agrees not to:</p>
+        <ul>
+          <li>Use the Services for any purpose other than that for which they are made available</li>
+          <li>Reproduce, copy, or redistribute Presto's Website content without prior permission</li>
+          <li>Circumvent, disable, or interfere with any security feature of the Website</li>
+          <li>Trick, defraud, or mislead Presto or misrepresent Client's identity or authority</li>
+          <li>Upload or transmit malicious code, viruses, or any material that interferes with the Website or Services</li>
+          <li>Harass, intimidate, threaten, or harm Presto or any of its contractors or representatives</li>
+          <li>Use the Services in a manner inconsistent with applicable laws or regulations</li>
+          <li>Attempt to access areas of the Website not intended for Client use</li>
+        </ul>
+
+        <h2>11. Client Feedback and Submissions</h2>
+        <p>Any questions, comments, suggestions, or other feedback submitted by Client ("Submissions") may be used by Presto at its discretion to improve the Website or Services. Presto is under no obligation to treat Submissions as confidential and assumes no obligation arising from them, except to the extent rights are granted to Client under Section 2 of this Agreement.</p>
+
+        <h2>12. Returns and Refunds</h2>
+        <p>Due to the custom, creative, and digital nature of the Services, all subscription payments made to Presto are generally non-refundable.</p>
+        <p>Refund requests are reviewed on a case-by-case basis at Presto's sole discretion. Clients are not entitled to refunds for work that has been delivered, is currently in progress, or for any billing period during which the subscription has been actively used.</p>
+        <p>Where a refund is granted by Presto, all rights to any Work Product produced during the applicable period revert to Presto and Client must cease use of such materials, unless otherwise agreed in writing.</p>
+        <p>Non-refundable payment processing fees (including Stripe transaction fees) will not be refunded under any circumstances.</p>
+        <p>Presto reserves the right to suspend or terminate Services and refuse refunds in cases of misuse, repeated chargeback threats, or material breach of this Agreement.</p>
+
+        <h2>13. Management and Oversight</h2>
+        <p>Presto reserves the right to monitor use of the Website and Services and to take appropriate action where a violation of this Agreement or applicable law is identified, including suspension or termination of access. Such decisions rest at Presto's sole discretion and may be made without prior notice or liability to Client.</p>
+
+        <h2>14. Privacy Policy</h2>
+        <p>Client's use of the Website is also governed by Presto's <a href="/privacy">Privacy Policy</a>, which is incorporated into this Agreement by reference.</p>
+
+        <h2>15. Modification of Terms</h2>
+        <p>Presto reserves the right to modify these Terms at any time. Material changes will be communicated to active clients via email with reasonable notice prior to taking effect. Continued use of the Services following such notice constitutes acceptance of the revised Terms.</p>
+
+        <h2>16. Service Availability</h2>
+        <p>Presto does not guarantee uninterrupted access to the Website or project management tools. Hardware, software, or third-party platform issues may result in interruptions or delays outside Presto's reasonable control. Presto shall not be liable to Client for any loss, inconvenience, or damage resulting from such interruptions.</p>
+
+        <h2>17. Governing Law</h2>
+        <p>This Agreement is governed by the laws of Australia. For clients based outside Australia, Presto does not exclude or limit any rights that may apply under mandatory consumer protection laws in your jurisdiction, including but not limited to the Australian Consumer Law, UK Consumer Rights Act, or applicable EU consumer law where relevant.</p>
+
+        <h2>18. Dispute Resolution</h2>
+        <p>In the event of a dispute arising from or in connection with this Agreement, the parties agree to first attempt resolution through good-faith negotiation. If a dispute cannot be resolved informally within 30 days, either party may seek relief through the appropriate Australian courts or relevant dispute resolution body.</p>
+
+        <h2>19. Disclaimer</h2>
+        <p>The Website and Services are provided on an "as is" and "as available" basis. Presto makes no warranties — express or implied — regarding the accuracy, completeness, or fitness for a particular purpose of the Services or any deliverables. To the extent permitted by applicable law, Presto disclaims all implied warranties, including merchantability and non-infringement.</p>
+
+        <h2>20. Limitation of Liability and Indemnification</h2>
+        <p>To the maximum extent permitted by applicable law, Presto and its contractors shall not be liable to Client for any indirect, consequential, incidental, special, or punitive damages — including lost profits or lost data — arising from Client's use of the Services.</p>
+        <p>Client agrees to indemnify and hold harmless Presto and its contractors from any claim, liability, loss, or expense (including reasonable legal fees) arising from: (a) Client's use of the Services in breach of this Agreement; (b) Client's violation of any third-party rights, including intellectual property rights; or (c) any content or materials provided by Client to Presto.</p>
+        <p>Nothing in this Agreement limits liability for fraud, death or personal injury caused by negligence, or any other liability that cannot be excluded under applicable law.</p>
+
+        <h2>21. User Data</h2>
+        <p>Client is solely responsible for all content and data submitted to or used within the Services. Presto shall not be liable to Client for any loss, corruption, or unauthorised access to such data. Client hereby waives any right of action against Presto for any such loss or corruption, to the maximum extent permitted by law.</p>
+
+        <h2>22. Electronic Communications and Signatures</h2>
+        <p>Client consents to receive communications from Presto electronically, including via email or the project management platform. Client agrees that electronic agreements, notices, disclosures, and records satisfy any legal requirement for such communications to be in writing. Client agrees to the use of electronic signatures and records for all transactions and interactions related to the Services.</p>
+
+        <h2>23. Portfolio and Showcasing Rights</h2>
+        <p>Presto reserves the right to display completed Work Product publicly — including on its website, social media channels, and in promotional materials — for portfolio and marketing purposes.</p>
+        <p>Clients who require confidentiality may enter into a Non-Disclosure Agreement (NDA) with Presto. A valid NDA in force between the parties supersedes this clause and prohibits Presto from publicly displaying or discussing the relevant Work Product for the duration of the NDA.</p>
+
+        <h2>24. Content Licensing</h2>
+        <p>Client is solely responsible for ensuring that all content, images, fonts, and media provided to Presto are properly licensed for their intended use. Licences held by Presto for tools, stock assets, or software used in production are not transferable to Client unless explicitly confirmed in writing by Presto.</p>
+
+        <h2>25. Miscellaneous</h2>
+        <p>This Agreement, together with Presto's Privacy Policy, constitutes the entire understanding between Presto and Client with respect to the Services and supersedes all prior agreements or representations. If any provision of this Agreement is found to be unenforceable, the remaining provisions continue in full force and effect. Presto's failure to enforce any provision shall not constitute a waiver of future enforcement. Nothing in this Agreement creates a joint venture, partnership, employment, or agency relationship between Presto and Client.</p>
+
+        <h2>26. Contact</h2>
+        <p>For questions, concerns, or notices under this Agreement:</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@heypresto.design">hello@heypresto.design</a><br>
+        <strong>Website:</strong> <a href="/">https://heypresto.design</a></p>
+
+        <p class="legal-footnote">Presto is a design and development subscription service based in Australia.</p>
+      </div>
+    </div>
+  </main>
+
+  <Footer
+    tagline="Your brand's monthly creative partner. Design, WordPress, and direction — async, no lock-in."
+    copyright="© 2026 Presto. Australia-based, globally trusted."
+    columns={footerColumns}
+  />
+</Base>
+
+<style>
+  .legal-page {
+    background: var(--bg);
+    padding-bottom: var(--space-24);
+  }
+
+  .legal-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 var(--space-8);
+  }
+
+  .legal-header {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-10);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: var(--space-10);
+  }
+
+  .legal-header h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: var(--text-4xl);
+    line-height: 1.06;
+    letter-spacing: -0.01em;
+    color: var(--fg-1);
+    margin: 0 0 var(--space-3);
+  }
+
+  .legal-meta {
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    color: var(--fg-3);
+    margin: 0;
+  }
+
+  .legal-body {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--leading-relaxed);
+    color: var(--fg-1);
+  }
+
+  .legal-body p {
+    margin: 0 0 1.25rem;
+  }
+
+  .legal-body h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: var(--text-2xl);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-snug);
+    color: var(--fg-1);
+    margin: 2.75rem 0 0.75rem;
+    padding-top: 0.25rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .legal-body h3 {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-semibold);
+    font-size: var(--text-md);
+    line-height: var(--leading-snug);
+    color: var(--fg-1);
+    margin: 1.75rem 0 0.5rem;
+  }
+
+  .legal-body ul,
+  .legal-body ol {
+    margin: 0 0 1.25rem;
+    padding-left: 1.5rem;
+  }
+
+  .legal-body li {
+    margin-bottom: 0.4rem;
+  }
+
+  .legal-body a {
+    color: var(--purple-500);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .legal-body a:hover {
+    color: var(--purple-700);
+  }
+
+  .legal-footnote {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--fg-3);
+    font-size: var(--text-sm);
+  }
+
+  @media (max-width: 600px) {
+    .legal-header h1 {
+      font-size: var(--text-3xl);
+    }
+
+    .legal-body h2 {
+      font-size: var(--text-xl);
+    }
+  }
+</style>
