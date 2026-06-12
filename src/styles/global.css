@@ -373,14 +373,17 @@ button { font-family: inherit; }
   flex-direction: column;
   gap: 18px;
   padding-bottom: 100px;
-  mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
 }
 .marquee-row { overflow: hidden; width: 100%; }
 .marquee-track {
   display: flex;
   gap: 18px;
   width: max-content;
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 .marquee-track--fwd { animation: marquee-fwd 70s linear infinite; }
 .marquee-track--rev { animation: marquee-rev 84s linear infinite; }
