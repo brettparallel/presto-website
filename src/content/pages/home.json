@@ -16,7 +16,7 @@
   },
   "problem": {
     "eyebrow": "The problem",
-    "heading": "You don't need more freelancers. You need a partner.",
+    "heading": "You don't need more freelancers. You need a partner.",
     "body": "Projects stall. Freelancers disappear. Agencies quote $15k for a website update. So creative work becomes reactive — bottlenecked on approvals, never quite moving as fast as the business needs.",
     "pains": [
       "You're managing three contractors for design, dev, and \"strategy\"",
@@ -30,7 +30,7 @@
   },
   "howItWorks": {
     "eyebrow": "How Presto works",
-    "heading": "Simple by design. Serious about output.",
+    "heading": "Simple by design. Serious about output.",
     "steps": [
       {
         "num": "01",
@@ -110,7 +110,7 @@
   },
   "pricing": {
     "eyebrow": "Pricing",
-    "heading": "One plan for every stage of growth.",
+    "heading": "One plan for every stage of growth.",
     "subline": "Simple, monthly. Pause or cancel anytime.",
     "note": "All plans include async workflow, a shared project board, and ongoing creative direction. No lock-in contracts. Month-to-month by default. Prices are in USD and correct as at June 2026.",
     "tiers": [
