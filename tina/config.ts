@@ -247,6 +247,75 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: 'thankYou',
+        label: 'Thank You Page',
+        path: 'src/content/thank-you',
+        format: 'json',
+        fields: [
+          // ── SEO ──
+          {
+            type: 'object',
+            name: 'seo',
+            label: 'SEO',
+            fields: [
+              { type: 'string', name: 'title', label: 'Page Title', required: true },
+              { type: 'string', name: 'description', label: 'Meta Description', ui: { component: 'textarea' }, required: true },
+            ],
+          },
+          // ── HERO ──
+          {
+            type: 'object',
+            name: 'hero',
+            label: 'Hero',
+            fields: [
+              { type: 'string', name: 'badge', label: 'Badge text' },
+              { type: 'string', name: 'headlineLine1', label: 'Headline — line 1' },
+              { type: 'string', name: 'headlineLine2', label: 'Headline — line 2 (highlighted)' },
+              { type: 'string', name: 'subline', label: 'Sub-line', ui: { component: 'textarea' } },
+            ],
+          },
+          // ── BANNER ──
+          {
+            type: 'object', name: 'banner', label: 'Lime banner strip',
+            fields: [{ type: 'string', name: 'text', label: 'Banner text' }],
+          },
+          // ── NEXT STEPS ──
+          {
+            type: 'object',
+            name: 'nextSteps',
+            label: 'Next steps',
+            fields: [
+              { type: 'string', name: 'eyebrow', label: 'Eyebrow' },
+              { type: 'string', name: 'heading', label: 'Heading' },
+              {
+                type: 'object', name: 'steps', label: 'Steps', list: true,
+                fields: [
+                  { type: 'string', name: 'num', label: 'Number' },
+                  { type: 'string', name: 'title', label: 'Title' },
+                  { type: 'string', name: 'description', label: 'Description', ui: { component: 'textarea' } },
+                  {
+                    type: 'string', name: 'variant', label: 'Card style',
+                    options: ['lime', 'navy', 'outline'],
+                  },
+                ],
+              },
+            ],
+          },
+          // ── CTA ──
+          {
+            type: 'object',
+            name: 'cta',
+            label: 'Bottom CTA card',
+            fields: [
+              { type: 'string', name: 'label', label: 'Eyebrow label' },
+              { type: 'string', name: 'text', label: 'Text', ui: { component: 'textarea' } },
+              { type: 'string', name: 'buttonLabel', label: 'Button label' },
+              { type: 'string', name: 'buttonHref', label: 'Button link' },
+            ],
+          },
+        ],
+      },
     ],
   },
 });

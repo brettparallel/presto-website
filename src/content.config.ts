@@ -111,4 +111,37 @@ const pagesCollection = defineCollection({
   }),
 });
 
-export const collections = { pages: pagesCollection };
+const thankYouCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/thank-you' }),
+  schema: z.object({
+    seo: z.object({
+      title: z.string(),
+      description: z.string(),
+    }),
+    hero: z.object({
+      badge: z.string(),
+      headlineLine1: z.string(),
+      headlineLine2: z.string(),
+      subline: z.string(),
+    }),
+    banner: z.object({ text: z.string() }),
+    nextSteps: z.object({
+      eyebrow: z.string(),
+      heading: z.string(),
+      steps: z.array(z.object({
+        num: z.string(),
+        title: z.string(),
+        description: z.string(),
+        variant: z.enum(['lime', 'navy', 'outline']),
+      })),
+    }),
+    cta: z.object({
+      label: z.string(),
+      text: z.string(),
+      buttonLabel: z.string(),
+      buttonHref: z.string(),
+    }),
+  }),
+});
+
+export const collections = { pages: pagesCollection, thankYou: thankYouCollection };

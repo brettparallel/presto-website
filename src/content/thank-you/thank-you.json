@@ -1,0 +1,45 @@
+{
+    "seo": {
+        "title": "Thank You — Presto",
+        "description": "You're in. Thanks for subscribing to Presto — here's what happens next."
+    },
+    "hero": {
+        "badge": "Payment confirmed",
+        "headlineLine1": "You're in.",
+        "headlineLine2": "Welcome to Presto.",
+        "subline": "We're genuinely excited to work with you. Your creative partnership starts now."
+    },
+    "banner": {
+        "text": "Brand, web, and strategy — handled."
+    },
+    "nextSteps": {
+        "eyebrow": "What happens next",
+        "heading": "Here's what to expect.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Check your inbox",
+                "description": "We'll be in touch within 24 hours with your client dashboard and information pack — everything you need to hit the ground running.",
+                "variant": "lime"
+            },
+            {
+                "num": "02",
+                "title": "Onboard and align",
+                "description": "We'll set up your Presto workspace and run a focused discovery session to understand your brand, goals, and what to tackle first.",
+                "variant": "navy"
+            },
+            {
+                "num": "03",
+                "title": "Submit, review, ship",
+                "description": "Your queue is open. Start submitting requests and we'll begin delivering — async, no hand-holding required.",
+                "variant": "outline"
+            }
+        ]
+    },
+    "cta": {
+        "label": "Any questions?",
+        "text": "Reach us anytime at hello@heypresto.design — we typically reply same business day.",
+        "buttonLabel": "Back to site",
+        "buttonHref": "/"
+    }
+}
