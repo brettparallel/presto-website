@@ -1,0 +1,57 @@
+{
+    "seo": {
+        "title": "The Reveal — Presto's Quarterly Design Report",
+        "description": "The quarterly design report for people who run businesses, not design studios. New trends, real examples, and what it all actually means for you — free."
+    },
+    "hero": {
+        "badge": "Issue 01 · Q3 2026",
+        "headlineLine1": "The",
+        "headlineLine2": "Reveal",
+        "subline": "The quarterly design report for people who run businesses, not design studios. New trends, real examples, and what it all actually means for you — in one short read.",
+        "ctaLabel": "Get this quarter's issue — free"
+    },
+    "banner": {
+        "text": "A quarterly briefing on brand, web & digital design."
+    },
+    "highlights": {
+        "eyebrow": "What's inside this issue",
+        "heading": "Four things worth five minutes.",
+        "items": [
+            {
+                "num": "01",
+                "title": "The clarity comeback",
+                "description": "Why Pantone just picked white as its colour of the year, and what it signals for brands drowning in visual noise.",
+                "variant": "lime"
+            },
+            {
+                "num": "02",
+                "title": "The hat that rebranded a bank",
+                "description": "How a £4bn UK challenger bank ditched its logo for an orange bowler hat, and why it worked.",
+                "variant": "navy"
+            },
+            {
+                "num": "03",
+                "title": "Findable by humans. Findable by AI.",
+                "description": "The quiet shift already changing how customers discover businesses like yours.",
+                "variant": "outline"
+            },
+            {
+                "num": "04",
+                "title": "A checklist, not just theory",
+                "description": "Five things worth checking on your own site this quarter.",
+                "variant": "lime"
+            }
+        ]
+    },
+    "form": {
+        "eyebrow": "Get your copy",
+        "heading": "One email. One PDF.",
+        "trustLine": "No spam, no sales calls — just the report, every quarter.",
+        "emailLabel": "Your email",
+        "buttonLabel": "Download Report",
+        "successHeading": "Your copy is ready.",
+        "successText": "Grab your download below.",
+        "downloadLabel": "Download the PDF"
+    },
+    "footerNote": "The Reveal is published quarterly by Presto. Unsubscribe any time."
+}

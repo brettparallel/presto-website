@@ -316,6 +316,81 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: 'reveal',
+        label: 'The Reveal (report landing page)',
+        path: 'src/content/the-reveal',
+        format: 'json',
+        fields: [
+          // ── SEO ──
+          {
+            type: 'object',
+            name: 'seo',
+            label: 'SEO',
+            fields: [
+              { type: 'string', name: 'title', label: 'Page Title', required: true },
+              { type: 'string', name: 'description', label: 'Meta Description', ui: { component: 'textarea' }, required: true },
+            ],
+          },
+          // ── HERO ──
+          {
+            type: 'object',
+            name: 'hero',
+            label: 'Hero',
+            fields: [
+              { type: 'string', name: 'badge', label: 'Badge text' },
+              { type: 'string', name: 'headlineLine1', label: 'Headline — line 1' },
+              { type: 'string', name: 'headlineLine2', label: 'Headline — line 2 (highlighted)' },
+              { type: 'string', name: 'subline', label: 'Sub-line', ui: { component: 'textarea' } },
+              { type: 'string', name: 'ctaLabel', label: 'Hero CTA label (scrolls to form)' },
+            ],
+          },
+          // ── BANNER ──
+          {
+            type: 'object', name: 'banner', label: 'Lime banner strip',
+            fields: [{ type: 'string', name: 'text', label: 'Banner text' }],
+          },
+          // ── HIGHLIGHTS ──
+          {
+            type: 'object',
+            name: 'highlights',
+            label: "This issue's highlights",
+            fields: [
+              { type: 'string', name: 'eyebrow', label: 'Eyebrow' },
+              { type: 'string', name: 'heading', label: 'Heading' },
+              {
+                type: 'object', name: 'items', label: 'Highlight cards', list: true,
+                fields: [
+                  { type: 'string', name: 'num', label: 'Number' },
+                  { type: 'string', name: 'title', label: 'Title' },
+                  { type: 'string', name: 'description', label: 'Description', ui: { component: 'textarea' } },
+                  {
+                    type: 'string', name: 'variant', label: 'Card style',
+                    options: ['lime', 'navy', 'outline'],
+                  },
+                ],
+              },
+            ],
+          },
+          // ── FORM ──
+          {
+            type: 'object',
+            name: 'form',
+            label: 'Signup / download form',
+            fields: [
+              { type: 'string', name: 'eyebrow', label: 'Eyebrow' },
+              { type: 'string', name: 'heading', label: 'Heading' },
+              { type: 'string', name: 'trustLine', label: 'Trust / reassurance line' },
+              { type: 'string', name: 'emailLabel', label: 'Email field label' },
+              { type: 'string', name: 'buttonLabel', label: 'Submit button label' },
+              { type: 'string', name: 'successHeading', label: 'Success heading' },
+              { type: 'string', name: 'successText', label: 'Success text', ui: { component: 'textarea' } },
+              { type: 'string', name: 'downloadLabel', label: 'Download button label' },
+            ],
+          },
+          { type: 'string', name: 'footerNote', label: 'Footer note' },
+        ],
+      },
     ],
   },
 });

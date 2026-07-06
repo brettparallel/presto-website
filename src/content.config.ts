@@ -144,4 +144,43 @@ const thankYouCollection = defineCollection({
   }),
 });
 
-export const collections = { pages: pagesCollection, thankYou: thankYouCollection };
+const revealCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/the-reveal' }),
+  schema: z.object({
+    seo: z.object({
+      title: z.string(),
+      description: z.string(),
+    }),
+    hero: z.object({
+      badge: z.string(),
+      headlineLine1: z.string(),
+      headlineLine2: z.string(),
+      subline: z.string(),
+      ctaLabel: z.string(),
+    }),
+    banner: z.object({ text: z.string() }),
+    highlights: z.object({
+      eyebrow: z.string(),
+      heading: z.string(),
+      items: z.array(z.object({
+        num: z.string(),
+        title: z.string(),
+        description: z.string(),
+        variant: z.enum(['lime', 'navy', 'outline']),
+      })),
+    }),
+    form: z.object({
+      eyebrow: z.string(),
+      heading: z.string(),
+      trustLine: z.string(),
+      emailLabel: z.string(),
+      buttonLabel: z.string(),
+      successHeading: z.string(),
+      successText: z.string(),
+      downloadLabel: z.string(),
+    }),
+    footerNote: z.string(),
+  }),
+});
+
+export const collections = { pages: pagesCollection, thankYou: thankYouCollection, reveal: revealCollection };
