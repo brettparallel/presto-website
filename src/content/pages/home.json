@@ -6,47 +6,47 @@
   "hero": {
     "badge": "Australia-based · Globally trusted",
     "headline": "Your brand's creative team.  Monthly. \nNo overhead.",
-    "subline": "Design and development — together, ongoing, and built around your business. Brand-led design, web development, and strategic direction, delivered async with zero hand-holding.",
+    "subline": "Design and development, together, ongoing, and built around your business. Presto is a monthly creative partner for businesses that need more than one-off projects, and more than a freelancer can give. Brand-led design, web development, and strategic direction, delivered async with zero hand-holding required.",
     "primaryCta": { "label": "Start your first month", "href": "#pricing" },
     "secondaryCta": { "label": "View plans", "href": "#pricing" },
     "footnote": "No lock-in · Pause or cancel anytime"
   },
   "trustBar": {
-    "text": "Trusted by founders & marketing teams across the US, UK & worldwide — async-first, no compromises."
+    "text": "Trusted by businesses in the US, UK, and worldwide. Async-first. No compromises."
   },
   "problem": {
     "eyebrow": "The problem",
-    "heading": "You don't need more freelancers. You need a partner.",
-    "body": "Projects stall. Freelancers disappear. Agencies quote $15k for a website update. So creative work becomes reactive — bottlenecked on approvals, never quite moving as fast as the business needs.",
+    "heading": "You don't need more freelancers. You need a partner.",
+    "body": "Most businesses with ongoing design and web needs are stuck in a frustrating cycle. Projects stall. Freelancers disappear. Agencies quote $15k for a website update. Hiring in-house feels premature. So creative work becomes reactive: squeezed between briefs, bottlenecked on approvals, never quite moving as fast as the business needs.",
     "pains": [
-      "You're managing three contractors for design, dev, and \"strategy\"",
+      "You're managing three different contractors for design, dev, and \"strategy\"",
       "Your website doesn't reflect where the brand actually is today",
-      "Work piles up with no reliable creative resource to send it to",
-      "Every project means a new brief, a new quote, a new onboarding",
-      "Your brand looks inconsistent across touchpoints — and you know it"
+      "Work piles up because there's no reliable creative resource to send it to",
+      "Every new project means a new brief, a new quote, a new onboarding",
+      "Your brand looks inconsistent across touchpoints, and you know it"
     ],
     "fixLabel": "The fix",
-    "fixHeadline": "One creative partner. One monthly\nplan. Everything moving forward."
+    "fixHeadline": "Presto fixes this. One creative partner. One monthly plan. Work moves forward."
   },
   "howItWorks": {
     "eyebrow": "How Presto works",
-    "heading": "Simple by design. Serious about output.",
+    "heading": "Simple by design. Serious about output.",
     "steps": [
       {
         "num": "01",
-        "title": "Onboard and align",
-        "description": "A focused discovery session to understand your brand, goals, and backlog. Your Presto workspace is set up — one clean place where all work lives."
+        "title": "Onboard and Align",
+        "description": "We start with a focused discovery session to understand your brand, your goals, and your backlog. From there, your Presto workspace is set up: a clean, organised environment where all work lives and progress is visible."
       },
       {
         "num": "02",
-        "title": "Submit, review, repeat",
-        "description": "Request design or development through your board. We prioritise and work through it continuously. You review, give feedback, we refine. No emails. No chasing.",
+        "title": "Submit, Review, Repeat",
+        "description": "Request design or development work through your project board. Requests are prioritised and worked through continuously throughout the month. You review, give feedback, and we refine. No emails to chase up, no waiting on replies.",
         "featured": true
       },
       {
         "num": "03",
-        "title": "Ongoing momentum",
-        "description": "Each month builds on the last. We think ahead, flag opportunities, and keep your brand moving in the right direction — strategic from day one."
+        "title": "Ongoing Momentum",
+        "description": "Each month builds on the last. We think ahead too, flagging opportunities and helping keep your brand pointed in the right direction, rather than just ticking off tasks."
       }
     ]
   },
@@ -66,31 +66,31 @@
         "variant": "accent",
         "items": [
           "Brand-led design across all touchpoints",
-          "Visual identity refinement",
-          "Marketing & campaign assets",
-          "Pitch decks & collateral",
-          "Social graphics & digital assets"
+          "Visual identity refinement and application",
+          "Marketing and campaign assets",
+          "Presentation design, pitch decks, and collateral",
+          "Social graphics and digital assets"
         ]
       },
       {
-        "title": "Web Design & Dev",
+        "title": "Web Design & Development",
         "variant": "navy",
         "items": [
-          "WordPress design and build",
+          "WordPress website design and build",
           "Page updates, new sections, landing pages",
-          "Performance & UX improvements",
-          "Static landing pages where they fit",
-          "Other platforms case-by-case"
+          "Performance and UX improvements",
+          "Static landing pages where they make sense",
+          "Other platforms handled on a case-by-case basis"
         ]
       },
       {
         "title": "Strategy & Direction",
         "variant": "lime",
         "items": [
-          "Ongoing creative direction",
+          "Ongoing creative direction, not just task execution",
           "Brand consistency guidance",
-          "Priority guidance — what & why",
-          "Regular check-ins & visibility"
+          "Priority guidance: what to work on and why",
+          "Regular check-ins and progress visibility"
         ]
       }
     ],
@@ -102,26 +102,26 @@
     "rows": [
       { "label": "Design + dev in one", "presto": "yes", "agency": "Sometimes", "freelancer": "Rarely", "inhouse": "Depends" },
       { "label": "Ongoing relationship", "presto": "yes", "agency": "Project-by-project", "freelancer": "Hit and miss", "inhouse": "yes-plain" },
-      { "label": "Strategic input", "presto": "yes", "agency": "Extra cost", "freelancer": "Rarely", "inhouse": "Varies" },
-      { "label": "Predictable monthly cost", "presto": "yes", "agency": "no", "freelancer": "no", "inhouse": "High fixed" },
+      { "label": "Strategic input", "presto": "yes", "agency": "Often extra cost", "freelancer": "Rarely", "inhouse": "Varies" },
+      { "label": "Predictable monthly cost", "presto": "yes", "agency": "no", "freelancer": "no", "inhouse": "High fixed cost" },
       { "label": "Fast turnaround", "presto": "yes", "agency": "Slow", "freelancer": "Inconsistent", "inhouse": "Internal delays" },
       { "label": "Async workflow", "presto": "yes", "agency": "no", "freelancer": "Sometimes", "inhouse": "no" }
     ]
   },
   "pricing": {
     "eyebrow": "Pricing",
-    "heading": "One plan for every stage of growth.",
+    "heading": "One plan for every stage of growth.",
     "subline": "Simple, monthly. Pause or cancel anytime.",
     "note": "All plans include async workflow, a shared project board, and ongoing creative direction. No lock-in contracts. Month-to-month by default. Prices are in USD and correct as at June 2026.",
     "tiers": [
       {
         "name": "Essentials",
-        "tagline": "For consistent, reliable design support.",
+        "tagline": "For businesses that need consistent, reliable design support.",
         "price": "2,450",
         "items": [
           "One active request at a time",
           "Brand-led design work",
-          "Light WordPress updates",
+          "Light web updates",
           "Brand asset production",
           "Shared async project board"
         ],
@@ -131,33 +131,33 @@
       },
       {
         "name": "Partner",
-        "tagline": "For teams with ongoing design + dev needs.",
+        "tagline": "For teams with ongoing design and web development needs.",
         "price": "3,950",
         "featured": true,
         "badge": "Most popular",
         "items": [
           "Two active requests at a time",
-          "Full design + WordPress development",
-          "Landing pages & new sections",
-          "Monthly strategy check-in",
+          "Full access to design and WordPress development",
+          "Landing pages and new sections",
+          "Monthly strategy check-in included",
           "Priority async turnaround"
         ],
-        "bestFor": "Best for: growing businesses, marketing teams",
+        "bestFor": "Best for: growing businesses, marketing teams, brands with active web and design needs",
         "ctaLabel": "Start with Partner",
         "ctaHref": "https://buy.stripe.com/3cI9AT4x16Vx2kX42ucZa01"
       },
       {
         "name": "Studio",
-        "tagline": "A full creative resource, month in, month out.",
+        "tagline": "For businesses that need a full creative resource, month in, month out.",
         "price": "6,500",
         "items": [
           "Multiple active requests",
-          "Fastest priority turnaround",
+          "Priority turnaround",
           "Dedicated creative direction",
-          "Multi-site & campaign support",
-          "Closer, hands-on partnership"
+          "Closer working relationship",
+          "Multi-site and campaign support"
         ],
-        "bestFor": "Best for: companies scaling fast, multiple sites",
+        "bestFor": "Best for: companies scaling fast, teams managing multiple campaigns or sites, businesses replacing an in-house hire",
         "ctaLabel": "Start with Studio",
         "ctaHref": "https://buy.stripe.com/8x25kD9RlbbNf7JfLccZa02"
       }
@@ -173,23 +173,23 @@
     "items": [
       {
         "question": "How is this different from hiring a freelancer?",
-        "answer": "A freelancer is usually project-specific, hard to retain, and rarely strategic. Presto is a structured, ongoing relationship with a consistent partner who understands your brand — not just your latest brief."
+        "answer": "A freelancer is usually project-specific, hard to retain long-term, and rarely provides strategic input. Presto is a structured, ongoing relationship with a consistent creative partner who understands your brand, not just your latest brief."
       },
       {
         "question": "What do you mean by \"async-first\"?",
-        "answer": "No constant meetings or real-time calls. Everything runs through your shared board. You submit work, leave feedback, and review updates on your own schedule."
+        "answer": "We don't require constant meetings, calls, or real-time collaboration. Everything runs through your shared ClickUp board. You submit work, leave feedback, and review updates on your own schedule. It's designed to take up as little of your time as possible."
       },
       {
         "question": "What platforms do you build on?",
-        "answer": "WordPress is our core specialty. We can also build static landing pages and work with other platforms where it makes sense — we'll be upfront if a project falls outside our wheelhouse."
+        "answer": "WordPress is our core specialty. It's what we know best and where we deliver the strongest results. We also build on other platforms where it makes sense, and can produce static landing pages outside of any CMS. Once a site is built, it's transferred to your account and it's yours to keep, with no ongoing Presto subscription required to maintain it."
       },
       {
         "question": "How fast do you turn work around?",
-        "answer": "Most design requests are delivered within 2–3 business days. Development varies by complexity. We're transparent about timelines and keep you informed throughout."
+        "answer": "Most design requests are delivered within 2-3 business days. Development work varies by complexity. We're transparent about timelines upfront, and we keep you informed throughout."
       },
       {
         "question": "Do you do SEO or paid ads?",
-        "answer": "No. Presto focuses on design, web, and creative direction. If you need SEO or paid media, we can point you toward people we trust."
+        "answer": "No. Presto focuses on design, web, and creative direction. We're not a marketing agency, and we won't try to be one. If you need SEO or paid media, we can point you toward people we trust."
       },
       {
         "question": "Is there a contract?",
@@ -199,13 +199,13 @@
   },
   "finalCta": {
     "headline": "Your brand deserves ongoing attention. Not occasional bursts.",
-    "subline": "Presto keeps things moving — month after month, with someone who actually knows your brand.",
+    "subline": "Design work that stops and starts never quite gets where it needs to go. Presto keeps things moving, month after month, with someone who actually knows your brand.",
     "primaryCta": { "label": "See plans and get started", "href": "#pricing" },
     "secondaryCta": { "label": "Book a quick call", "href": "https://calendly.com/hello-heypresto/30min" },
     "footnote": "Month-to-month · Cancel anytime · No surprises"
   },
   "footer": {
-    "tagline": "Your brand's monthly creative partner. Design, WordPress, and direction — async, no lock-in.",
+    "tagline": "Your brand's monthly creative partner. Design, web development, and creative direction. Async-first, no lock-in.",
     "copyright": "© 2026 Presto. Australia-based, globally trusted.",
     "columns": [
       {
