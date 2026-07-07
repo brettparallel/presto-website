@@ -176,16 +176,48 @@
         "answer": "A freelancer is usually project-specific, hard to retain long-term, and rarely provides strategic input. Presto is a structured, ongoing relationship with a consistent creative partner who understands your brand, not just your latest brief."
       },
       {
+        "question": "How does onboarding work?",
+        "answer": "Once you subscribe, we'll set up your dedicated ClickUp board within one business day. It's where every request lives: briefs, files, feedback, and progress, all in one place. A short kick-off call (or an async brief, if you'd rather skip the call) gets us up to speed on your brand before the first request goes in."
+      },
+      {
         "question": "What do you mean by \"async-first\"?",
         "answer": "We don't require constant meetings, calls, or real-time collaboration. Everything runs through your shared ClickUp board. You submit work, leave feedback, and review updates on your own schedule. It's designed to take up as little of your time as possible."
+      },
+      {
+        "question": "How will I request designs?",
+        "answer": "Add a task to your ClickUp board with whatever you've got: a written brief, a Google Doc, a Loom video, a rough sketch, or just a few lines explaining what you need. If it can be linked or attached, we can work with it."
       },
       {
         "question": "What platforms do you build on?",
         "answer": "WordPress is our core specialty. It's what we know best and where we deliver the strongest results. We also build on other platforms where it makes sense, and can produce static landing pages outside of any CMS. Once a site is built, it's transferred to your account and it's yours to keep, with no ongoing Presto subscription required to maintain it."
       },
       {
+        "question": "Who's actually doing the design work?",
+        "answer": "Presto is run by two experienced designers and co-founders, not a rotating bench of contractors or junior staff. You're working directly with the people who built the business, on every request, every month."
+      },
+      {
+        "question": "How many requests can I have active at once?",
+        "answer": "You can add as many requests to your board as you like, and they'll queue up and move through in order. How many are worked on at once depends on your plan: Essentials covers one active request at a time, Partner covers two, and Studio flexes higher for heavier-volume needs."
+      },
+      {
+        "question": "How do you handle larger requests?",
+        "answer": "Bigger jobs (a full site rebuild, a multi-page brand refresh, a longer campaign) get broken down into stages on our end. You'll see steady progress in chunks every couple of days rather than waiting weeks for one big reveal, and you can redirect early if something's not landing."
+      },
+      {
         "question": "How fast do you turn work around?",
         "answer": "Most design requests are delivered within 2-3 business days. Development work varies by complexity. We're transparent about timelines upfront, and we keep you informed throughout."
+      },
+      {
+        "question": "What if I don't like the design?",
+        "answer": "We'll keep refining it. Revisions are unlimited and included in every plan. We're not done until you're genuinely happy with the result."
+      },
+      {
+        "question": "What tools do you design in?",
+        "answer": "Mostly Figma and Adobe Creative Suite, depending on the request. Deliverables are typically supplied as production-ready files. The tool behind the scenes matters far less than what lands in your hands."
+      },
+      {
+        "question": "Are there any requests you don't support?",
+        "answer": "A few. We don't currently take on 3D modelling or motion/video work. Everything else within brand, design, and web sits comfortably in our wheelhouse. If you're ever unsure, just ask before you submit."
       },
       {
         "question": "Do you do SEO or paid ads?",
@@ -194,6 +226,18 @@
       {
         "question": "Is there a contract?",
         "answer": "No lock-in contracts. Presto runs month-to-month. You can pause or cancel with 30 days' notice."
+      },
+      {
+        "question": "Can I use Presto for just a month?",
+        "answer": "Absolutely. Some clients need a short, focused burst of work; others stay on indefinitely. Use it for a month, pause when you're done, and come back whenever the next project comes up. There's no penalty either way."
+      },
+      {
+        "question": "Can I try before committing?",
+        "answer": "Book a quick call and we'll have an honest conversation about whether Presto is the right fit. If it is, we can often get started within the same week."
+      },
+      {
+        "question": "Where are you based?",
+        "answer": "Presto is based in Australia, working with clients across the US, UK, and worldwide. Our async workflow means time zones don't get in the way."
       }
     ]
   },
