@@ -200,7 +200,7 @@ button { font-family: inherit; }
 }
 .hero-headline {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: var(--weight-bold);
   font-size: clamp(46px, 7vw, 96px);
   line-height: .98;
   letter-spacing: -.01em;
@@ -311,7 +311,7 @@ button { font-family: inherit; }
 }
 .problem-fix-headline {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: var(--weight-bold);
   font-size: clamp(26px, 3.4vw, 40px);
   line-height: 1.08;
   margin: 0;
@@ -506,7 +506,7 @@ button { font-family: inherit; }
 }
 .pricing-name {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: var(--weight-bold);
   font-size: 32px;
   margin: 0;
   color: inherit;
@@ -632,7 +632,7 @@ button { font-family: inherit; }
 .final-cta .wrap { padding-top: 104px; padding-bottom: 104px; position: relative; text-align: center; }
 .final-cta-headline {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: var(--weight-bold);
   font-size: clamp(40px, 5.5vw, 72px);
   line-height: 1.02;
   margin: 0 auto;

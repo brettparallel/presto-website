@@ -1,12 +1,12 @@
 {
   "seo": {
     "title": "Presto — Your monthly creative partner",
-    "description": "Brand-led design, WordPress development, and strategic direction — async, on a subscription, with zero hand-holding required."
+    "description": "Brand-led design, web development, and strategic direction — async, on a subscription, with zero hand-holding required."
   },
   "hero": {
     "badge": "Australia-based · Globally trusted",
     "headline": "Your brand's creative team.  Monthly. \nNo overhead.",
-    "subline": "Design and development — together, ongoing, and built around your business. Brand-led, WordPress-ready, delivered async with zero hand-holding.",
+    "subline": "Design and development — together, ongoing, and built around your business. Brand-led design, web development, and strategic direction, delivered async with zero hand-holding.",
     "primaryCta": { "label": "Start your first month", "href": "#pricing" },
     "secondaryCta": { "label": "View plans", "href": "#pricing" },
     "footnote": "No lock-in · Pause or cancel anytime"

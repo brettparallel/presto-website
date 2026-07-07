@@ -111,17 +111,17 @@
 
 /* Semantic type classes */
 .t-hero, .t-display {
-  font-family: var(--font-display); font-weight: 400;
+  font-family: var(--font-display); font-weight: var(--weight-bold);
   font-size: var(--text-7xl); line-height: 0.98;
   letter-spacing: -0.01em; color: var(--fg-1);
 }
-.t-h1 { font-family: var(--font-display); font-weight: 400;
+.t-h1 { font-family: var(--font-display); font-weight: var(--weight-bold);
   font-size: var(--text-5xl); line-height: 1.0;
   letter-spacing: -0.01em; color: var(--fg-1); }
-.t-h2 { font-family: var(--font-display); font-weight: 400;
+.t-h2 { font-family: var(--font-display); font-weight: var(--weight-bold);
   font-size: var(--text-4xl); line-height: 1.06;
   letter-spacing: -0.01em; color: var(--fg-1); }
-.t-h3 { font-family: var(--font-display); font-weight: 400;
+.t-h3 { font-family: var(--font-display); font-weight: var(--weight-bold);
   font-size: var(--text-3xl); line-height: 1.1;
   letter-spacing: -0.005em; color: var(--fg-1); }
 .t-h4 { font-family: var(--font-sans); font-weight: var(--weight-bold);
