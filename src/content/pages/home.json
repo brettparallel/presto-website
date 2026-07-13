@@ -172,7 +172,7 @@
     "headline": "The design world moves fast. We tell you what's worth noticing.",
     "subline": "The Reveal is our free quarterly newsletter: new trends, real brand examples, and what they mean for your business. No jargon, one short read.",
     "cta": { "label": "Get The Reveal", "href": "/the-reveal/" },
-    "image": "/assets/The-Reveal-mockup-image/Issue01mockupimage-wideformat.jpg",
+    "image": "/assets/The-Reveal-mockup-image/Issue01mockupimage-square.jpg",
     "imageAlt": "The Reveal, Issue 01 — Presto's quarterly design briefing, printed and on a desk"
   },
   "faq": {
@@ -266,7 +266,8 @@
           { "label": "How it works", "href": "#how-it-works" },
           { "label": "What's included", "href": "#whats-included" },
           { "label": "Pricing", "href": "#pricing" },
-          { "label": "FAQ", "href": "#faq" }
+          { "label": "FAQ", "href": "#faq" },
+          { "label": "Free design report", "href": "/the-reveal/" }
         ]
       },
       {
