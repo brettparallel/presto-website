@@ -85,6 +85,14 @@ const pagesCollection = defineCollection({
       label: z.string(),
       tools: z.array(z.string()),
     }),
+    revealPromo: z.object({
+      eyebrow: z.string(),
+      headline: z.string(),
+      subline: z.string(),
+      cta: z.object({ label: z.string(), href: z.string() }),
+      image: z.string(),
+      imageAlt: z.string(),
+    }),
     faq: z.object({
       eyebrow: z.string(),
       heading: z.string(),

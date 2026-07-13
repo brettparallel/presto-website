@@ -167,6 +167,14 @@
     "label": "Platforms & tools we specialise in",
     "tools": ["WordPress","Webflow","Figma","Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Sketch","Shopify","Squarespace","Wix","Framer","Astro","Cloudflare","Elementor"]
   },
+  "revealPromo": {
+    "eyebrow": "The Reveal · Free quarterly newsletter",
+    "headline": "The design world moves fast. We tell you what's worth noticing.",
+    "subline": "The Reveal is our free quarterly newsletter: new trends, real brand examples, and what they mean for your business. No jargon, one short read.",
+    "cta": { "label": "Get The Reveal", "href": "/the-reveal/" },
+    "image": "/assets/The-Reveal-mockup-image/Issue01mockupimage-wideformat.jpg",
+    "imageAlt": "The Reveal, Issue 01 — Presto's quarterly design briefing, printed and on a desk"
+  },
   "faq": {
     "eyebrow": "FAQ",
     "heading": "Good questions. Honest answers.",
