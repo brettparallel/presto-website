@@ -104,6 +104,10 @@ export default defineConfig({
               { type: 'string', name: 'eyebrow', label: 'Eyebrow' },
               { type: 'string', name: 'heading', label: 'Heading' },
               { type: 'string', name: 'subline', label: 'Sub-line' },
+              {
+                type: 'object', name: 'cta', label: 'CTA',
+                fields: [{ type: 'string', name: 'label', label: 'Label' }, { type: 'string', name: 'href', label: 'Link' }],
+              },
               { type: 'string', name: 'rowA', label: 'Row A image slugs', list: true },
               { type: 'string', name: 'rowB', label: 'Row B image slugs', list: true },
             ],

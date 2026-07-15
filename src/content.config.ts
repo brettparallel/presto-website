@@ -40,6 +40,7 @@ const pagesCollection = defineCollection({
       eyebrow: z.string(),
       heading: z.string(),
       subline: z.string(),
+      cta: z.object({ label: z.string(), href: z.string() }),
       rowA: z.array(z.string()),
       rowB: z.array(z.string()),
     }),

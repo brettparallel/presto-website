@@ -54,6 +54,7 @@
     "eyebrow": "Selected work",
     "heading": "A look at what we ship.",
     "subline": "Brands, packaging, print and web — built across industries.",
+    "cta": { "label": "See portfolio", "href": "/work/" },
     "rowA": ["mock-myket-tote","art-13","mock-choptop-wood","art-02","art-19","mock-apr-card","art-07","art-21","mock-plantpal-pack","art-04","art-16","mock-ksr-brochure","art-10","art-01","mock-cyberpoint-cap"],
     "rowB": ["art-22","art-08","mock-wm-cup","art-14","art-05","mock-esee-tent","art-18","art-11","art-03","art-20","art-09","art-17","art-06","art-12"]
   },
