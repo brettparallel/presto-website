@@ -1,0 +1,26 @@
+{
+  "order": 1,
+  "featured": true,
+  "category": "Brand identity & web",
+  "title": "Kenneally's Funerals",
+  "tagline": "A warm, dignified identity for a family funeral home in Sydney — built end to end, from concept to a live website in eight weeks.",
+  "cardTags": ["Logo", "Visual identity", "Collateral", "Website"],
+  "description": "A full visual identity system was developed for the Kenneally's Funerals business in Sydney. From logo and brand visual style development to a complete rollout of brochures, price guides and point-of-sale items — plus a full website. This was delivered within eight weeks, from concept to completion.",
+  "deliverables": ["Logo development", "Visual identity system", "Collateral rollout", "POS items", "Website"],
+  "turnaround": "8 weeks, concept to completion",
+  "heroImage": "/assets/case-studies/kenneallys/hero.jpg",
+  "heroImageAlt": "Kenneally's Funerals website mockup",
+  "cardImage": "/assets/case-studies/kenneallys/hero.jpg",
+  "cardImageAlt": "Kenneally's Funerals website mockup",
+  "gallery": [
+    { "image": "/assets/case-studies/kenneallys/brochure.jpg", "alt": "Kenneally's Funerals A4 brochure cover" },
+    { "image": "/assets/case-studies/kenneallys/business-cards.jpg", "alt": "Kenneally's Funerals business cards" },
+    { "image": "/assets/case-studies/kenneallys/banner.jpg", "alt": "Kenneally's Funerals banner signage" },
+    { "image": "/assets/case-studies/kenneallys/vehicle-signage.jpg", "alt": "Kenneally's Funerals vehicle signage" },
+    { "image": "/assets/case-studies/kenneallys/logo-mockup.jpg", "alt": "Kenneally's Funerals logo mockup" }
+  ],
+  "seo": {
+    "title": "Kenneally's Funerals — Case Study | Presto",
+    "description": "A warm, dignified identity for a family funeral home in Sydney — logo, brand, full collateral and website, live in eight weeks."
+  }
+}

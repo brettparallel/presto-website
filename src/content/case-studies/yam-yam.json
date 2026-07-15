@@ -1,0 +1,25 @@
+{
+  "order": 4,
+  "featured": false,
+  "category": "Brand & packaging",
+  "title": "YAM YAM Sauces",
+  "tagline": "A bold, easy-to-implement brand refresh taking a start-up condiment maker's spice-infused sauces to the local market.",
+  "cardTags": [],
+  "description": "A start-up local condiment maker needed a simple brand refresh to take their spice-infused condiment sauces to the local market. A bold and easy-to-implement brand was needed — one that would minimise costs in print and development, while striking an authentic visual appeal that suited the owners and their audience. This was delivered within six weeks, from concept to artwork completion.",
+  "deliverables": ["Visual identity", "Label design", "Merchandise"],
+  "turnaround": "6 weeks, concept to artwork",
+  "heroImage": "/assets/case-studies/yam-yam/hero.jpg",
+  "heroImageAlt": "YAM YAM Sauces shopping bag mockup",
+  "cardImage": "/assets/case-studies/yam-yam/hero.jpg",
+  "cardImageAlt": "YAM YAM Sauces shopping bag mockup",
+  "gallery": [
+    { "image": "/assets/case-studies/yam-yam/bottle.jpg", "alt": "YAM YAM sauce bottle label mockup" },
+    { "image": "/assets/case-studies/yam-yam/tshirt.jpg", "alt": "YAM YAM branded t-shirt mockup" },
+    { "image": "/assets/case-studies/yam-yam/poster.jpg", "alt": "YAM YAM paper poster mockup" },
+    { "image": "/assets/case-studies/yam-yam/cards.jpg", "alt": "YAM YAM overlapping business cards mockup" }
+  ],
+  "seo": {
+    "title": "YAM YAM Sauces — Case Study | Presto",
+    "description": "A bold, authentic refresh taking a start-up condiment maker's sauces to the local market."
+  }
+}

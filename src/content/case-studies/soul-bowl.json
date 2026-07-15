@@ -1,0 +1,25 @@
+{
+  "order": 2,
+  "featured": false,
+  "category": "Packaging & launch",
+  "title": "Soul Bowl Product Launch",
+  "tagline": "Cost-smart labelling and packaging that turned a new Jerk Spice Rub into a shelf standout — and drove traffic at a local food expo.",
+  "cardTags": [],
+  "description": "Soul Bowl asked us to develop labelling and packaging formats for their new Jerk Spice Rub, an offshoot to their successful catering solutions. The brief was to keep a cost-efficient solution to labelling and boxed packaging. In addition, some simple point-of-sale was required to help drive traffic to their stand at a local food expo. This was delivered within four weeks, from concept to completion.",
+  "deliverables": ["Packaging", "Flyer design", "Merchandise"],
+  "turnaround": "4 weeks, concept to completion",
+  "heroImage": "/assets/case-studies/soul-bowl/hero.jpg",
+  "heroImageAlt": "Soul Bowl Jerk Spice Rub packaging boxes",
+  "cardImage": "/assets/case-studies/soul-bowl/hero.jpg",
+  "cardImageAlt": "Soul Bowl Jerk Spice Rub packaging boxes",
+  "gallery": [
+    { "image": "/assets/case-studies/soul-bowl/spice-container.jpg", "alt": "Soul Bowl spice container mockup" },
+    { "image": "/assets/case-studies/soul-bowl/flyer.jpg", "alt": "Soul Bowl DL flyer mockup" },
+    { "image": "/assets/case-studies/soul-bowl/totebag.jpg", "alt": "Soul Bowl tote bag merchandise" },
+    { "image": "/assets/case-studies/soul-bowl/leaflet.jpg", "alt": "Soul Bowl flying leaflet mockup" }
+  ],
+  "seo": {
+    "title": "Soul Bowl Product Launch — Case Study | Presto",
+    "description": "Cost-smart labelling and packaging that turned a new jerk spice rub into a shelf standout."
+  }
+}

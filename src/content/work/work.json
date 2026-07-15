@@ -1,0 +1,16 @@
+{
+  "seo": {
+    "title": "Our Work — Presto",
+    "description": "Brands built, launched and rolled out — end to end. A look at recent projects we've shipped with the people behind them. Real work, real turnarounds."
+  },
+  "hero": {
+    "eyebrow": "Our work",
+    "headline": "Work we're proud of.",
+    "subline": "Brands built, launched and rolled out — end to end. A look at recent projects we've shipped with the people behind them. Real work, real turnarounds.",
+    "stats": [
+      { "value": "4", "label": "Case studies" },
+      { "value": "4–8", "label": "Weeks, concept to done" },
+      { "value": "Async", "label": "No hand-holding" }
+    ]
+  }
+}

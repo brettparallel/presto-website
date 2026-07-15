@@ -191,4 +191,56 @@ const revealCollection = defineCollection({
   }),
 });
 
-export const collections = { pages: pagesCollection, thankYou: thankYouCollection, reveal: revealCollection };
+const caseStudiesCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/case-studies' }),
+  schema: z.object({
+    order: z.number(),
+    featured: z.boolean().optional(),
+    category: z.string(),
+    title: z.string(),
+    tagline: z.string(),
+    cardTags: z.array(z.string()).optional(),
+    description: z.string(),
+    deliverables: z.array(z.string()),
+    turnaround: z.string(),
+    heroImage: z.string(),
+    heroImageAlt: z.string(),
+    cardImage: z.string(),
+    cardImageAlt: z.string(),
+    gallery: z.array(z.object({
+      image: z.string(),
+      alt: z.string(),
+    })),
+    seo: z.object({
+      title: z.string(),
+      description: z.string(),
+    }),
+  }),
+});
+
+const workCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/work' }),
+  schema: z.object({
+    seo: z.object({
+      title: z.string(),
+      description: z.string(),
+    }),
+    hero: z.object({
+      eyebrow: z.string(),
+      headline: z.string(),
+      subline: z.string(),
+      stats: z.array(z.object({
+        value: z.string(),
+        label: z.string(),
+      })),
+    }),
+  }),
+});
+
+export const collections = {
+  pages: pagesCollection,
+  thankYou: thankYouCollection,
+  reveal: revealCollection,
+  caseStudies: caseStudiesCollection,
+  work: workCollection,
+};

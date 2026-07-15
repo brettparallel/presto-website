@@ -391,6 +391,78 @@ export default defineConfig({
           { type: 'string', name: 'footerNote', label: 'Footer note' },
         ],
       },
+      {
+        name: 'caseStudies',
+        label: 'Case Studies',
+        path: 'src/content/case-studies',
+        format: 'json',
+        fields: [
+          { type: 'number', name: 'order', label: 'Sort order', description: 'Controls listing order and Previous/Next sequence on the case study page.' },
+          { type: 'boolean', name: 'featured', label: "Featured on Work page (large banner card)" },
+          { type: 'string', name: 'category', label: 'Category label' },
+          { type: 'string', name: 'title', label: 'Project title', required: true },
+          { type: 'string', name: 'tagline', label: 'Tagline', ui: { component: 'textarea' } },
+          { type: 'string', name: 'cardTags', label: 'Tags (shown on featured card only)', list: true },
+          { type: 'string', name: 'description', label: 'Brief / description', ui: { component: 'textarea' } },
+          { type: 'string', name: 'deliverables', label: 'Deliverables', list: true },
+          { type: 'string', name: 'turnaround', label: 'Turnaround' },
+          { type: 'image', name: 'heroImage', label: 'Hero image' },
+          { type: 'string', name: 'heroImageAlt', label: 'Hero image alt text' },
+          { type: 'image', name: 'cardImage', label: 'Work page card / thumbnail image' },
+          { type: 'string', name: 'cardImageAlt', label: 'Card image alt text' },
+          {
+            type: 'object', name: 'gallery', label: 'Gallery images', list: true,
+            description: 'Selected-work gallery on the case study page. First 3 fill the placeholder layout — add as many more as you like.',
+            fields: [
+              { type: 'image', name: 'image', label: 'Image' },
+              { type: 'string', name: 'alt', label: 'Alt text' },
+            ],
+          },
+          {
+            type: 'object',
+            name: 'seo',
+            label: 'SEO',
+            fields: [
+              { type: 'string', name: 'title', label: 'Page Title', required: true },
+              { type: 'string', name: 'description', label: 'Meta Description', ui: { component: 'textarea' }, required: true },
+            ],
+          },
+        ],
+      },
+      {
+        name: 'work',
+        label: 'Work Page (portfolio index)',
+        path: 'src/content/work',
+        format: 'json',
+        fields: [
+          {
+            type: 'object',
+            name: 'seo',
+            label: 'SEO',
+            fields: [
+              { type: 'string', name: 'title', label: 'Page Title', required: true },
+              { type: 'string', name: 'description', label: 'Meta Description', ui: { component: 'textarea' }, required: true },
+            ],
+          },
+          {
+            type: 'object',
+            name: 'hero',
+            label: 'Hero',
+            fields: [
+              { type: 'string', name: 'eyebrow', label: 'Eyebrow' },
+              { type: 'string', name: 'headline', label: 'Headline', ui: { component: 'textarea' }, required: true },
+              { type: 'string', name: 'subline', label: 'Sub-line', ui: { component: 'textarea' } },
+              {
+                type: 'object', name: 'stats', label: 'Stats row', list: true,
+                fields: [
+                  { type: 'string', name: 'value', label: 'Value (e.g. 4, 4–8, Async)' },
+                  { type: 'string', name: 'label', label: 'Label' },
+                ],
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
 });

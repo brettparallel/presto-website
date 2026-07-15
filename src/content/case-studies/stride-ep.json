@@ -1,0 +1,26 @@
+{
+  "order": 3,
+  "featured": false,
+  "category": "Brand identity",
+  "title": "Stride EP Brand Launch",
+  "tagline": "A fresh, simple, modern identity to launch a local physiotherapy and exercise business to both an existing client base and a new audience.",
+  "cardTags": [],
+  "description": "A new visual identity was required for the launch of a new local physiotherapy and exercise business. A fresh, simple and modern approach was needed to help them launch to an existing client base, as well as target a fresh audience. This was delivered within six weeks, from concept to completion.",
+  "deliverables": ["Visual identity", "Collateral rollout", "Merchandise", "Website (in development)"],
+  "turnaround": "6 weeks, concept to completion",
+  "heroImage": "/assets/case-studies/stride-ep/hero.jpg",
+  "heroImageAlt": "Stride EP branded gym wall signage",
+  "cardImage": "/assets/case-studies/stride-ep/hero.jpg",
+  "cardImageAlt": "Stride EP branded gym wall signage",
+  "gallery": [
+    { "image": "/assets/case-studies/stride-ep/tshirt.jpg", "alt": "Stride EP branded t-shirt mockup" },
+    { "image": "/assets/case-studies/stride-ep/bottle.jpg", "alt": "Stride EP sport bottle mockup" },
+    { "image": "/assets/case-studies/stride-ep/backpack.jpg", "alt": "Stride EP linen backpack mockup" },
+    { "image": "/assets/case-studies/stride-ep/hanging-sign.jpg", "alt": "Stride EP hanging sign mockup" },
+    { "image": "/assets/case-studies/stride-ep/enamel-pin.jpg", "alt": "Stride EP enamel pin on fabric" }
+  ],
+  "seo": {
+    "title": "Stride EP Brand Launch — Case Study | Presto",
+    "description": "A fresh, modern identity to launch a physio and exercise studio to new and existing clients."
+  }
+}
